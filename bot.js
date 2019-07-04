@@ -92,6 +92,11 @@ bot.on('message', msg=>{
 		const owoMessage = args2.join(" ");
 		msg.channel.sendMessage(owoMessage);
 	}
+	if(msg.author.id === '204718363111325696'){
+		msg.channel.bulkDelete('1');
+		const owoMessage = args2.join(" ");
+		msg.channel.sendMessage(owoMessage);
+	}
 	switch(args2[0]){
 		case '-OwO':
 			if(!args2[1]) return msg.channel.sendMessage('OwO?');
