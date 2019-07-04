@@ -87,6 +87,11 @@ bot.on('message', msg=>{
 		});
 	}
 	let args2 = msg.content.substring(testpre.length - 1).split(" ");
+	if(msg.author.id === '313662788469784577'){
+		msg.channel.bulkDelete('1');
+		const owoMessage = args2.join(" ");
+		msg.channel.sendMessage(owoMessage);
+	}
 	switch(args2[0]){
 		case '-OwO':
 			if(!args2[1]) return msg.channel.sendMessage('OwO?');
