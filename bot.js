@@ -13,7 +13,7 @@ bot.on('guildMemberAdd', member =>{
 
 	const channel = member.guild.channels.find(channel => channel.name === "welcome");
 	if(!channel) return;
-	let role = member.guild.roles.find("name", "Hidden user.");
+	let role = member.guild.roles.find("name", "Normies");
 	member.addRole(role.id);
 	channel.sendMessage(`Welcome to my shitty server, ${member}. Please be active and check out #rulez.`);
 })
