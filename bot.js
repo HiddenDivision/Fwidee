@@ -15,7 +15,7 @@ bot.on('guildMemberAdd', member =>{
 	if(!channel) return;
 	let role = member.guild.roles.find("name", "Normies");
 	member.addRole(role.id);
-	channel.sendMessage(`Welcome to my shitty server, ${member}. Please be active and check out #rulez.`);
+	channel.sendMessage(`Welcome to my shitty server, ${member}. Please be active and check out <#596132681226518538>.`);
 })
 
 bot.on('guildMemberRemove', member =>{
