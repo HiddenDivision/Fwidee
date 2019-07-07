@@ -47,6 +47,15 @@ bot.on('message', msg=>{
 		const attachement = new Attachment('https://cdn.discordapp.com/attachments/545281417571991572/595472395159076890/ah.mp4');
 		msg.channel.sendMessage(attachement);
 	}
+	if(msg.content === '...'){
+		if(msg.author.id === '333357946744602647'){
+			const akame = new Attachment('https://cdn.discordapp.com/attachments/574383177418670080/596809522807439384/1498048478_tumblr_nglsikuDqM1rbrys3o2_r1_500.gif');
+			msg.channel.sendMessage('You know what will happen next... :smiling_imp:');
+			msg.channel.sendMessage(akame);			}
+		else{
+			return;
+		}
+	}
 	if(msg.content === "<@596149623400169502> Help."){
 		const embed = new RichEmbed()
 		.setTitle('Available Commands :')
